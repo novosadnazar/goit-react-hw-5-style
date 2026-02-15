@@ -1,0 +1,38 @@
+.wrapper {
+  width: 170px;
+  height: 70px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.label {
+  margin-left: 5px;
+}
+
+.badgeList {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.badge {
+  font-size: 13px;
+  background-color: moccasin;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.easyActive {
+  background-color: #2ed573;
+  color: white;
+}
+.mediumActive {
+  background-color: #ffa502;
+  color: white;
+}
+.hardActive {
+  background-color: #ff4757;
+  color: white;
+}
