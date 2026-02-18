@@ -1,4 +1,5 @@
-import  style  from "./Difficulty.module.css";
+
+import style from "./Difficulty.module.css";
 export const Difficulty = ({ level }) => {
   return (
     <div className={style.wrapper}>
