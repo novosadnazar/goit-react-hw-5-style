@@ -1,14 +1,21 @@
 
-import style from "./Difficulty.module.css";
+import { Wrapper, Label, BadgeList, Badge } from "../Difficulty/Difficulty.style";
+
 export const Difficulty = ({ level }) => {
   return (
-    <div className={style.wrapper}>
-      <span className={style.label}>Difficulty</span>
-      <div className={style.badgeList}>
-        <span className={`${style.badge} ${level === 0 ? style.easyActive : ""}`}>Easy</span>
-        <span className={`${style.badge} ${level === 1 ? style.mediumActive : ""}`}>Medium</span>
-        <span className={`${style.badge} ${level === 2 ? style.hardActive : ""}`}>Hard</span>
-      </div>
-    </div>
+    <Wrapper>
+      <Label>Difficulty</Label>
+      <BadgeList>
+        <Badge $isActive={level === 0} $type="easy">
+          Easy
+        </Badge>
+        <Badge $isActive={level === 1} $type="medium">
+          Medium
+        </Badge>
+        <Badge $isActive={level === 2} $type="hard">
+          Hard
+        </Badge>
+      </BadgeList>
+    </Wrapper>
   );
 };
